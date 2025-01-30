@@ -4,8 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- DaisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7f0a98f75f.js" crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- google fonts link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font -->
+     <style>
+        .font-ad{
+            font-family: "ADLaM Display", serif;
+        }
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+     </style>
+     <!-- color -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nav-bg': '#FFF9F4',
+                'btn-bg': '#FFDC26',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <header>
+        <!-- nav-bar -->
+         <nav class="bg-nav-bg">
+            <div class="navbar container mx-auto flex justify-between">
+                <div class="navbar-start flex gap-3">  
+                  <img src="./c1-assets/logo-header.png" alt="">
+                  <a class="text-xl font-sara hidden lg:flex">Browse<span class="text-btn-bg">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-sora">Find a pet</a></li>
+                    <li><a class="font-sora">Breeds</a></li>
+                    <li><a class="font-sora">Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                  <i class="fa-regular fa-bell mr-3 cursor-pointer"></i>
+                  <i class="fa-solid fa-magnifying-glass mr-3 cursor-pointer"></i>
+                  <a class="btn bg-transparent border-1 mr-3 border-btn-bg font-sora">Login</a>
+                  <a class="btn bg-btn-bg font-sora">Register</a>
+                </div>
+
+
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden relative">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm bg-base-100 absolute -left-40 dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+
+
+              </div>   
+         </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
