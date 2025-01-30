@@ -53,7 +53,7 @@
     <header>
         <!-- nav-bar -->
          <nav class="bg-nav-bg">
-            <div class="navbar container mx-auto flex justify-between">
+            <div class="navbar flex container mx-auto justify-between">
                 <div class="navbar-start flex gap-3">  
                   <img src="./c1-assets/logo-header.png" alt="">
                   <a class="text-xl font-sara hidden lg:flex">Browse<span class="text-btn-bg">4</span>Pets</a>
@@ -71,8 +71,6 @@
                   <a class="btn bg-transparent border-1 mr-3 border-btn-bg font-sora">Login</a>
                   <a class="btn bg-btn-bg font-sora">Register</a>
                 </div>
-
-
 
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden relative">
@@ -101,10 +99,68 @@
 
               </div>   
          </nav>
+
+         <!-- Banner -->
+          <section class="container mx-auto mt-8 lg:mt-24">
+            <div class="relative bg-[url('./c1-assets/cat-big.png')] bg-contain bg-no-repeat bg-center w-full h-[500px] lg:h-[700px]">
+                <div class="">
+                    <h1 class="font-ad text-xl lg:text-5xl leading-tight">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+                    <p class="py-2 lg:py-4 font-sora w-9/12">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="btn bg-btn-bg font-sora">Find a pet</button>
+                </div>
+                <!-- Animation -->
+                <div class="absolute h-4 w-4 left-[200px] bg-red-600 lg:h-10 lg:w-10 lg:left-[600px] animate-spin">
+                
+                </div>
+            </div>   
+          </section>
     </header>
 
     <main>
+        <!-- Browse section -->
+         <section class="lg:mt-24 container mx-auto">
+             <h2 class="font-ad text-3xl">Browse By Categories</h2>
+             <!-- card -->
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-6 mt-10">
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center p-10 space-y-4 rounded-lg">
+                    <img class="w-20 bg-white p-5 rounded-full" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h3 class="font-ad text-lg">Dog</h3>
+                    <p class="font-sora">3 Items</p>
+                </div>
 
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center p-10 space-y-4 rounded-lg">
+                    <img class="w-20 bg-white p-5 rounded-full" src="./c1-assets/fish-cartoon.png" alt="">
+                    <h3 class="font-ad text-lg">Dog</h3>
+                    <p class="font-sora">3 Items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center p-10 space-y-4 rounded-lg">
+                    <img class="w-20 bg-white p-5 rounded-full" src="./c1-assets/cat-cartoon.png" alt="">
+                    <h3 class="font-ad text-lg">Dog</h3>
+                    <p class="font-sora">3 Items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center p-10 space-y-4 rounded-lg">
+                    <img class="w-20 bg-white p-5 rounded-full" src="./c1-assets/bird-cartoon.png" alt="">
+                    <h3 class="font-ad text-lg">Dog</h3>
+                    <p class="font-sora">3 Items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center p-10 space-y-4 rounded-lg">
+                    <img class="w-20 bg-white p-5 rounded-full" src="./c1-assets/mouse-cartoon.png" alt="">
+                    <h3 class="font-ad text-lg">Dog</h3>
+                    <p class="font-sora">3 Items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center p-10 space-y-4 rounded-lg">
+                    <img class="w-20 bg-white p-5 rounded-full" src="./c1-assets/rabbit-cartoon.png" alt="">
+                    <h3 class="font-ad text-lg">Dog</h3>
+                    <p class="font-sora">3 Items</p>
+                </div>
+            </div>
+            
+
+         </section>
     </main>
 
     <footer>
